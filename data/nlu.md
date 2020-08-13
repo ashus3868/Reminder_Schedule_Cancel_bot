@@ -27,6 +27,13 @@
 - no way
 - not really
 
+## intent:ask_id
+- tell me the conversation id
+- what's my conversation id
+- tell me session id
+- may i know what is my session id
+- What is the ID of this conversation?
+
 ## intent:mood_great
 - perfect
 - very good
