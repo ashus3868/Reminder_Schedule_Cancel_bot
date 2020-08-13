@@ -9,6 +9,8 @@ intents:
 - mood_great
 - mood_unhappy
 - bot_challenge
+- ask_id:
+    triggers: action_session_id
 - ask_remind_call:
     triggers: action_set_reminder
 - EXTERNAL_reminder:
@@ -41,3 +43,4 @@ actions:
 - utter_happy
 - utter_goodbye
 - utter_iamabot
+- action_session_id
