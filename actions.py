@@ -87,3 +87,17 @@ class ForgetReminders(Action):
 
         # Cancel all reminders
         return [ReminderCancelled("my_reminder")]
+    
+class ActionSessionId(Action):
+    def name(self) -> Text:
+        return "action_session_id"
+
+    async def run(
+        self, dispatcher, tracker: Tracker, domain: Dict[Text, Any]
+    ) -> List[Dict[Text, Any]]:
+
+        conversation_id=tracker.sender_id
+
+        dispatcher.utter_message("The conversation id is {}".format(conversation_id))
+
+        return []
